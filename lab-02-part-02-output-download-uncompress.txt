@@ -18,7 +18,7 @@ $ echo hello
 
 Copy and paste the output below.
 ----------
-
+hello
 
 
 ==========
@@ -28,7 +28,7 @@ $ echo hello there
 
 Copy and paste the output below.
 ----------
-
+hello there
 
 
 ==========
@@ -38,7 +38,7 @@ $ echo good mornin'
 
 Copy and paste the output below.
 ----------
-
+> 
 
 
 ==========
@@ -46,8 +46,7 @@ Copy and paste the output below.
 
 Type [CTRL + C] to get your prompt back.
 ----------
-
-
+ent-v321-006:~ student$
 
 ==========
 5. Say good mornin' again with quotes!
@@ -56,7 +55,7 @@ $ echo "good mornin'"
 
 Copy and paste the output below.
 ----------
-
+good mornin'
 
 
 ==========
@@ -66,7 +65,7 @@ $ echo *
 
 What happens?
 ----------
-
+Desktop Documents Downloads Library Movies Music My Song.band Pictures Public Sites Things VirtualBox VMs stuff vms
 
 
 ==========
@@ -74,7 +73,7 @@ What happens?
 
 Write the command that you used below:
 ----------
-
+clean
 
 
 ==========
@@ -87,7 +86,12 @@ $ curl google.com
 
 Copy and paste the output below.
 ----------
-
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
 
 
 ==========
@@ -97,7 +101,7 @@ $ curl www.google.com
 
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
-
+301 Moved
 
 
 ==========
@@ -105,7 +109,7 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 
 Write the command you used below.  Also copy and paste the output below.
 ----------
-
+curl -o google.html wwww.google.com
 
 
 ==========
@@ -113,7 +117,8 @@ Write the command you used below.  Also copy and paste the output below.
 
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
-
+pwd
+/Users/student
 
 
 ==========
@@ -121,7 +126,7 @@ Write the command you used to determine your directory.  Also, copy and paste th
 
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
-
+cd ~
 
 
 ==========
@@ -137,6 +142,16 @@ Use ls to verify that it downloaded.
 
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
+curl -o mtec1002-lab-02.zip http://foureyes.github.io/mtec1002-spring2014/labs/02/mtec1002-lab-02.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  935k  100  935k    0     0  1165k      0 --:--:-- --:--:-- --:--:-- 1164k
+ent-v321-006:~ student$ ls
+Desktop			Music			Things
+Documents		My Song.band		VirtualBox VMs
+Downloads		Pictures		mtec1002-lab-02.zip
+Library			Public			stuff
+Movies			Sites			vms
 
 
 
@@ -145,7 +160,7 @@ Write down the command that you used to download the file below.  Additionally, 
 
 Write down the command that you used to uncompress the file.
 ----------
-
+unzip mtec1002-lab-02.zip
 
 
 ==========
@@ -153,7 +168,7 @@ Write down the command that you used to uncompress the file.
 
 Copy and paste the output below.
 ----------
-
+books	logs	web
 
 
 ==========
@@ -164,6 +179,12 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
+Desktop			My Song.band		__MACOSX
+Documents		Pictures		mtec1002-lab-02
+Downloads		Public			mtec1002-lab-02.zip
+Library			Sites			stuff
+Movies			Things			vms
+Music			VirtualBox VMs
 
 
 
@@ -176,6 +197,7 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
+hello.txt
 
 
 
@@ -188,7 +210,12 @@ List the files in the directory you're currently in (which should be home).
 
 Copy and paste the output below.
 ----------
-
+Desktop			My Song.band		__MACOSX
+Documents		Pictures		mtec1002-lab-02
+Downloads		Public			mtec1002-lab-02.zip
+Library			Sites			stuff
+Movies			Things			stuff.tar
+Music			VirtualBox VMs		vms
 
 
 ==========
@@ -198,7 +225,8 @@ $ tar -cvf stuff.tar stuff
 
 Copy and paste the output below.
 ----------
-
+a stuff
+a stuff/hello.txt
 
 
 ==========
@@ -206,7 +234,12 @@ Copy and paste the output below.
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
-
+Desktop			My Song.band		__MACOSX
+Documents		Pictures		mtec1002-lab-02
+Downloads		Public			mtec1002-lab-02.zip
+Library			Sites			stuff
+Movies			Things			stuff.tar
+Music			VirtualBox VMs		vms
 
 
 ==========
@@ -216,7 +249,12 @@ gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
-
+Desktop			My Song.band		__MACOSX
+Documents		Pictures		mtec1002-lab-02
+Downloads		Public			mtec1002-lab-02.zip
+Library			Sites			stuff
+Movies			Things			stuff.tar.gz
+Music			VirtualBox VMs		vms
 
 
 ==========
@@ -230,7 +268,7 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
+books		logs		stuff.tar.gz	web
 
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
@@ -239,14 +277,14 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
-
+books		logs		stuff		stuff.tar.gz	web
 
 
 ==========
 24. Go back to your home directory
 [No output]
 ----------
-
+cd ~
 
 
 ==========
@@ -258,9 +296,15 @@ REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 
 Write out the commands that you used to do this.
 ----------
-
+curl -o secret.tar.gz http://foureyes.github.io/mtec1002/labs/02/secret.tar.gz
+tar -xvf secret.tar.gz
 
 
 ==========
 26. How many files were in the archive.  What were their names?  Write out your answers below.
 ----------
+4 files 
+x secret/
+x secret/I HEARD YOU
+x secret/LIKE FILES
+x secret/SO I PUT THREE FILES IN YOUR FILE
